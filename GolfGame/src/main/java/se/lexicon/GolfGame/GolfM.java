@@ -52,10 +52,10 @@ public class GolfM {
 			re="Triple-bogey!";
 			break;
 		default:
-			if((par-tries)<-4) {
+			if((tries-par)<-4) {
 				re="Condor!!!Amazing!!!";
 			}else {
-				re=(par-tries)+"-over-par.";
+				re=(tries-par)+"-over-par.";
 			}
 		}
 		return re;

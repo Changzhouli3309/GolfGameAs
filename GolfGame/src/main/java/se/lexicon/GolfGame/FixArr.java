@@ -107,30 +107,22 @@ public class FixArr {
 	//Check if element is in arrays or not
 		
 	public static boolean isInArr(int [] source,int cn) {
-		boolean isIn=false;
-		for (int n:source) {
-			if (cn==n) {
-				isIn=true;
-			}
-		}
+		boolean isIn=true;
+		int index=Arrays.binarySearch(source, cn);
+		if (index==-1) {isIn=false;}
 		return isIn;
 	}
 	public static boolean isInArr(double [] source,double cn) {
-			boolean isIn=false;
-			for (double n:source) {
-				if (cn==n) {
-					isIn=true;
-				}
-			}
+			boolean isIn=true;
+			int index=Arrays.binarySearch(source, cn);
+			if (index==-1) {isIn=false;}
+			
 			return isIn;
 		}
 	public static boolean isInArr(String [] source,String cs) {
 			boolean isIn=false;
-			for (String s:source) {
-				if (cs.equals(s)) {
-					isIn=true;
-				}
-			}
+			int index=Arrays.binarySearch(source, cs);
+			if (index!=-1) {isIn=true;}
 			return isIn;
 		}
 	
