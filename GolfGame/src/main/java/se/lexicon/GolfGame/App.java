@@ -8,7 +8,7 @@ public class App
     	int de=1,
     	c=0,tries=1,dif=1,
     	//Tolerance arrays for positions of ball and hole
-    	//Example size=2 means ball arrays is {-0.2,-0.1,ball position,0.1,0.2}
+    	//Example size=2 means ball-position-arrays will be {-0.2,-0.1,ball position,0.1,0.2}
     	ballSize=1,holeSize=2;
     	// mid position of ball or hole
     	double ballM=0,holeM=0,
@@ -97,7 +97,9 @@ public class App
 				
 				//show the distant of every tries
 				for (int i = 0; i < travel.length; i++) {
-					System.out.println((i + 1) + "   " + FixDouble.printD(togoal[i], de,(int)max)+"m to goal, you shot "
+					System.out.println((i + 1) + "   " 
+							+FixDouble.printD(togoal[i], de,(int)max)
+							+"m to goal, you shot "
 							+FixDouble.printD(travel[i], de,(int)max)+"m");
 				}
 				System.out.println();

@@ -12,7 +12,7 @@ public class CountTest {
 	}
 	@Test
 	public void test_Matching() {
-		double mid1=1.5,mid2=1.8;
+		double mid1=1.5,mid2=1.8;//|min1-mid2|<(size1+size2) return true
 		int size1=1,size2=3,di=1;
 		Assert.assertTrue(GolfM.isHit(GolfM.getSize(mid1, size1, di),GolfM.getSize(mid2, size2, di)));
 	}
